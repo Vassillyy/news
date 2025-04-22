@@ -15,9 +15,11 @@ const FeedbackSelector = () => {
 
   return (
     <Flex gap="15px" align="center">
-      <Text className={styles.feedbackSelector__bage}>
-        {isPositive ? 'Positive' : 'Negative'}
-      </Text>
+      <Tag color="springgreen">
+        <Text className={styles.feedbackSelector__bage}>
+          {isPositive ? 'Positive' : 'Negative'}
+        </Text>
+      </Tag>
       <Tag
         className={styles.feedbackSelector__checkbox}
         icon={
