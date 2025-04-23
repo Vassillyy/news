@@ -2,7 +2,7 @@
   height: 200px;
   padding: 15px;
   margin: 15px 20px 0 20px;
-  border: 1px solid white;
+  border: 2px solid #303030;
   border-bottom: none;
   border-radius: 8px 8px 0 0;
   &__title {
@@ -35,19 +35,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid white;
+    border: 3px solid Silver;
     border-radius: 0;
-    color: white;
+    color: Silver;
     cursor: pointer;
   }
   &__icon {
     font-size: 16px;
-    color: white;
+    color: Silver;
   }
   &__bage {
     padding: 2px 15px;
     font-size: 14px;
     border-radius: 4px;
+  }
+}
+
+.profileSettings {
+  &__email {
+    font-size: 20px;
+    color: #1A7BBF !important;
+    border-bottom: 2px solid #1A7BBF !important;
+  }
+  &__icon {
+    font-size: 20px;
+    color: Silver;
+  }
+  &__info {
+    font-size: 20px;
+    color: grey;
   }
 }
 

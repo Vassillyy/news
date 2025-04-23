@@ -1,13 +1,17 @@
+import {useState} from 'react'
 import {Layout} from 'antd'
 import Header from '@/components/header/Header'
+import {dataArticle} from '@/data/dataArticle'
 import './styles.scss'
 
 const {Content, Footer} = Layout
 
 function App() {
+  const [article, setArticle] = useState(dataArticle)
+
   return (
     <Layout className="app">
-      <Header />
+      <Header article={article} />
       {/*<Content*/}
       {/*  style={{*/}
       {/*    color: 'white',*/}
