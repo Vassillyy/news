@@ -3,20 +3,14 @@ import {GlobalOutlined, ReadOutlined, UserOutlined} from '@ant-design/icons'
 import {Article} from '@/data/Article.d'
 import styles from './styles.module.scss'
 
-const {Text, Link} = Typography
+const {Text} = Typography
 
 const ProfileSettings = ({article}: {article: Article}) => {
   return (
     <Flex gap={20}>
       <Flex gap={5}>
         <GlobalOutlined className={styles.profileSettings__icon} />
-        <Link
-          className={styles.profileSettings__email}
-          href={article.link}
-          target="_blank"
-        >
-          {article.domain}
-        </Link>
+        <Text className={styles.profileSettings__domain}>{article.domain}</Text>
       </Flex>
 
       <Flex gap={5}>

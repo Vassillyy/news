@@ -1,0 +1,18 @@
+.content {
+  border-right: 1px solid #303030;
+  border-left: 1px solid #303030;
+  padding-right: 15px;
+  padding-left: 15px;
+  &__mainText {
+    color: white;
+    font-size: 17px;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1A7BBF;
+    cursor: pointer;
+    font-size: 17px;
+  }
+}
