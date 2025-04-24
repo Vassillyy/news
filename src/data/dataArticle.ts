@@ -34,6 +34,6 @@ export const dataArticle: Article = {
       count: 0.41
     }
   ],
-  fav: '',
+  fav: 'src/icons/flag_rus.svg',
   highlights: ['']
 }

@@ -53,7 +53,7 @@
 
 .profileSettings {
   &__email {
-    font-size: 20px;
+    font-size: 18px;
     color: #1A7BBF !important;
     border-bottom: 2px solid #1A7BBF !important;
   }
@@ -62,8 +62,12 @@
     color: Silver;
   }
   &__info {
-    font-size: 20px;
+    font-size: 18px;
     color: grey;
   }
+}
+
+:global(.ant-image) {
+  display: flex;
 }
 

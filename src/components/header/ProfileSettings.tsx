@@ -1,10 +1,5 @@
-import {Flex, Typography} from 'antd'
-import {
-  GlobalOutlined,
-  FlagOutlined,
-  ReadOutlined,
-  UserOutlined
-} from '@ant-design/icons'
+import {Flex, Typography, Image} from 'antd'
+import {GlobalOutlined, ReadOutlined, UserOutlined} from '@ant-design/icons'
 import {Article} from '@/data/Article.d'
 import styles from './styles.module.scss'
 
@@ -17,15 +12,20 @@ const ProfileSettings = ({article}: {article: Article}) => {
         <GlobalOutlined className={styles.profileSettings__icon} />
         <Link
           className={styles.profileSettings__email}
-          target="_blank"
           href={article.link}
+          target="_blank"
         >
           {article.domain}
         </Link>
       </Flex>
 
       <Flex gap={5}>
-        <FlagOutlined className={styles.profileSettings__icon} />
+        <Image
+          className={styles.profileSettings__icon}
+          src={article.fav}
+          preview={false}
+          width={20}
+        />
         <Text className={styles.profileSettings__info} strong>
           {article.country}
         </Text>
