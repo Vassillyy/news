@@ -7,6 +7,7 @@
     "skipLibCheck": true,
     "noEmit": true,
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "paths": {
       "*": ["node_modules/*"],

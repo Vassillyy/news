@@ -1,11 +1,13 @@
 .content {
-  border-right: 1px solid #303030;
-  border-left: 1px solid #303030;
-  padding-right: 15px;
-  padding-left: 15px;
+  border: 1px solid #303030;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 0 15px 10px;
+
   &__mainText {
     color: white;
     font-size: 17px;
+    line-height: 1.5;
   }
   &__button {
     display: flex;
@@ -14,5 +16,130 @@
     color: #1A7BBF;
     cursor: pointer;
     font-size: 17px;
+    margin-top: 5px;
+  }
+  &__link {
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #373450;
+    color: #1A7BBF;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  &__footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 10px;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  &__icon {
+    color: white;
+  }
+  &__bage {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.listKeywords {
+  margin-top: 15px;
+  &__dage {
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+    border: 2px solid #303030;
+    border-radius: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  &__label {
+    color: gray;
+    font-size: 17px;
+  }
+  &__value {
+    color: white;
+    font-size: 17px;
+  }
+  &__icon {
+    color: gray;
+  }
+}
+
+.filterData {
+  &__item {
+    cursor: pointer;
+  }
+  &__label {
+    color: gray;
+    font-size: 15px;
+  }
+  &__value {
+    color: white;
+    font-size: 15px;
+  }
+  &__icon {
+    color: white;
+  }
+}
+
+.duplicationData {
+  margin-top: 10px;
+  border: 2px solid #1A7BBF;
+  border-radius: 10px;
+  padding: 15px;
+  &__title {
+    color: #1A7BBF !important;
+    margin: 0 !important;
+  }
+}
+
+.duplicationDataMetrics {
+  width: 100%;
+  &__item {
+    &_data {
+      color: grey;
+      font-size: 18px;
+    }
+    &_reach {
+      color: white;
+      font-size: 18px;
+    }
+  }
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    padding: 10px 10px;
+    margin: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid Silver;
+    border-radius: 0;
+    color: Silver;
+    cursor: pointer;
+  }
+  &__icon {
+    font-size: 16px;
+    color: Silver;
+  }
+}
+
+.duplicationProfileSettings {
+  &__domain {
+    font-size: 18px;
+    color: #1A7BBF !important;
+    border-bottom: 2px solid #1A7BBF !important;
+  }
+  &__icon {
+    color: Silver;
+  }
+  &__info {
+    font-size: 18px;
+    color: grey;
   }
 }

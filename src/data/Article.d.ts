@@ -15,11 +15,13 @@ export interface Article {
   traffic: Traffic[]
   fav: string
   highlights: string[]
+  duplicates: number
 }
 
 interface Keyword {
   value: string
   count: number
+  icon?: string
 }
 
 interface Traffic {
