@@ -73,11 +73,15 @@ const Content = ({article}: {article: Article}) => {
 
     article.keywords.forEach((keyword) => {
       for (let i = 0; i < highlightedText.length; i++) {
+        const formettedStr = highlightedText[i].replace(/[.,]/g, '')
         if (
-          highlightedText[i]
-            .toLowerCase()
-            .startsWith(keyword.value.toLowerCase().slice(0, -2))
+          (keyword.value.toUpperCase() !== keyword.value &&
+            formettedStr
+              .toLowerCase()
+              .startsWith(keyword.value.toLowerCase().slice(0, -2))) ||
+          formettedStr === keyword.value
         ) {
+          console.warn(formettedStr, keyword.value)
           highlightedText[i] =
             `<span style="background-color: #1A7BBF; padding: 1px;border-radius: 5px">${highlightedText[i]}</span>`
         }
