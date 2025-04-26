@@ -46,7 +46,10 @@
 }
 
 .listKeywords {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 15px;
+  gap: 10px;
   &__dage {
     width: fit-content;
     display: flex;
@@ -55,6 +58,7 @@
     border-radius: 15px;
     padding-right: 12px;
     padding-left: 12px;
+    white-space: nowrap;
   }
   &__label {
     color: gray;
@@ -66,6 +70,13 @@
   }
   &__icon {
     color: gray;
+  }
+  &__button {
+    color: #1A7BBF;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 }
 

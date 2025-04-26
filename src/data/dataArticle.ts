@@ -55,6 +55,11 @@ export const dataArticle: Article = {
       value: 'Батарея',
       count: 1,
       icon: ''
+    },
+    {
+      value: 'Глобальный',
+      count: 1,
+      icon: ''
     }
   ],
   author: ['Коробатов Я.', 'Петров М.', 'Иванов В.'],
